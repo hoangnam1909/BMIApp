@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <GridPane prefHeight="250.0" prefWidth="360.0" stylesheets="@../css/style.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.80001068115234" minWidth="10.0" prefWidth="84.5333251953125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.73332519531246" minWidth="10.0" prefWidth="215.73332519531246" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.79997253417969" minWidth="10.0" prefWidth="40.06667480468752" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="65.66666641235352" minHeight="10.0" prefHeight="53.93334808349609" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="51.86666259765625" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="48.9999969482422" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.53331604003907" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.53331604003907" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.53331604003907" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="76.0" prefWidth="114.0" styleClass="title" text="BMI APP" GridPane.columnSpan="3" GridPane.halignment="CENTER" />
+            <Label text="Chiều cao" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label text="Cân nặng" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="lbResult" styleClass="lbResult" text="Label" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Label text="(kg)" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="(cm)" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Button fx:id="btnCalc" mnemonicParsing="false" onAction="#bmiHandle" text="Tính" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="txtHeight" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtWeight" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

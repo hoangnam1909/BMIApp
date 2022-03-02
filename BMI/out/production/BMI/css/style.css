@@ -1,0 +1,14 @@
+.title {
+    -fx-text-fill: rgb(19, 152, 175);
+    -fx-font-size: 30;
+}
+
+Button {
+    -fx-pref-width: 100;
+    -fx-pref-heigh: 30;
+}
+
+.lbResult {
+    -fx-font-size: 20;
+    -fx-font-weight: 300;
+}
